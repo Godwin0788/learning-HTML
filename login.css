@@ -1,0 +1,182 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(221, 161, 236);
+}
+
+.wrapper {
+    width: 500px;
+    background-color: white;
+    color: mediumorchid;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2px;
+}
+
+.input-box {
+    position: relative;
+    width: 85%;
+    height: 5px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(225, 225, 225, .2);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 25px 50px 25px 25px;
+}
+
+.input-box input::placeholder {
+    color: gray;
+
+}
+
+.input-box i {
+    position: absolute;
+    left: 10px;
+    top: 450%;
+    transform: translateY(-3%);
+    font-size: 15px;
+}
+
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 15px 0 15px;
+    margin-top: 70px;
+}
+
+.remember-forget label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forget label {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.remember-forget a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 600;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(179, 178, 245);
+}
+
+.register-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.register-link p a {
+    color: blue;
+    text-decoration: none;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.line p {
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.line p::before {
+    content: "";
+    display: block;
+    width: 197px;
+    height: 1px;
+    background: gray;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.line p::after {
+    content: "";
+    display: block;
+    width: 197px;
+    height: 1px;
+    background: gray;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.social-media{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media div{
+    width: 10px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    text-align: center;
+
+}
+
+.social-media div:hover {
+    color: rgb(155, 155, 156);
+}
+
+.social-media .fa{
+    margin-left: 25px;
+    color: blue;
+    font-size: 30px;
+}
+
+.social-media .go{
+    margin-left: 25px;
+    color: green;
+    font-size: 30px;
+}
+
+.social-media .gi{
+    margin-left: 25px;
+    color: black;
+    font-size: 30px;
+}
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="styles/layout.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: aquamarine;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            color: black;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: greenyellow;
+            padding: 20px;
+
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0px;
+
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: yellowgreen;
+            height: 300px;
+
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: gold;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h2>Cities</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Kampala</a></li>
+                <li><a href="#">Arua</a></li>
+                <li><a href="#">Gulu</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Kampala</h1>
+            <p>Kampala is the capital city of Uganda. It is the most populous city in Uganda, with a metropolitan area
+                of over 30 million inhabitants.</p>
+            <p>Standing on the seven hills, kampala has been a major settlement for two millennia, its history going
+                back to its founding by the british, who named it kampala.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>

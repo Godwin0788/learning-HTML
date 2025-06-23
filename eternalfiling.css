@@ -1,0 +1,18 @@
+p{background-color: azure;
+    color: red;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15px;
+}
+h1{
+    color: green;
+    text-align: center;
+    background-color: blue;
+    padding: 30px;
+    margin-top: auto;
+}
+h2{
+    color: cyan;
+    background-color: blueviolet;
+    padding: 20px;
+}

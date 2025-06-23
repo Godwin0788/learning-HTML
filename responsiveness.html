@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Left{
+            background-color: aqua;
+            height: 100px;
+            width: 50px;
+        }
+        .right{
+            background-color: blue;
+            height: 100px;
+            width: 50px;
+        }
+        @media screen and (max-width: 400px) {
+            .Left {display: none;}
+            .play{width: 100px; color: red;}
+      }
+      
+    </style>
+</head>
+
+<body>
+    <picture>
+        <source srcset="mountain.jpg" media="(max-width: 400px)">
+        <source srcset="forest.jpg" media="(max-width: 600px)">
+        <source srcset="breakfast.jpg">
+        <img src="mountain.jpg" alt="forest" style="width: auto;">
+    </picture>
+    <p style="font-size:10px;">children going to school on a every day.</p>
+    <p class="play" style="font-size:10vw;">playing in the rain.</p>
+    
+    <div class="Left">
+    </div>
+    <div class="right">
+    </div>
+</body>
+
+</html>
