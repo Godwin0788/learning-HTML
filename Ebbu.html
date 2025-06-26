@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebuu Auto Services-leading auto services in Uganda</title>
+    <link rel="stylesheet" href="Ebbu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- copied a link from boxicons for the close and menu icons as in the class i -->
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="ebbu-new-logo-44-A0x1nOW9wDhpOxnq.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- added another idd called navlinks purposely for the java script -->
+                <i class='bx bx-window-close' onclick="hideMenu()"></i>
+                <!-- added a java script on click hide menu -->
+                <ul>
+                    <li> <a href="">HOME</a></li>
+                    <li> <a href="">ABOUT</a></li>
+                    <li> <a href="">SERVICES</a></li>
+                    <li> <a href="">PROJECTS</a></li>
+                    <li> <a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="showMenu()"></i>
+            <!-- added a java script on click showmenu -->
+        </nav>
+        <div class="text-box">
+            <h1>A garage offering comprehensive solutions for vehicle care</h1>
+            <p>Specializing in car repairs, spraying, and mechanical repairs</p>
+            <a href="" class="vist-bttn">Visit us to know more</a>
+        </div>
+
+
+    </section>
+
+    <!-- creating the services -->
+    <section class="services">
+        <h1>Our services</h1>
+        <p class="gr">Providing thorough diagnostics to identify and resolve any car-related issues.</p>
+        <!--add more content by creating div  -->
+        <div class="row">
+            <div class="service-col">
+                <img class="service-img" src="general repair.PNG" alt="engines">
+                <h3>General repairs</h3>
+                <p>shdhdhdh</p>
+            </div>
+            <div class="service-col">
+                <img class="service-img" src="vehicle service.png" alt="vehicle service">
+                <h3>Vehicle service</h3>
+                <p>shdhdhdh</p>
+            </div>
+            <div class="service-col">
+                <img class="service-img" src="body.PNG" alt="body">
+                <h3>Body works and Spraying</h3>
+                <p>shdhdhdh</p>
+            </div>
+            <div class="service-col">
+                <img class="service-img" src="ferey.PNG" alt="upholstery">
+                <h3>Vehicle upholstery</h3>
+                <p>shdhdhdh</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- added below javascript for toggled menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        // then create a function to show and hide menu for navLinks
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
+</body>
+
+</html>
